@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8" />
+  <head>
+    <title>etch-a-sketch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <h1 id="header-title">Etch-a-Sketch</h1>
+  </head>
+  <body>
+    <div id="container">
+      <div id="text"></div>
+      <div id="left-container">
+        <div id="grid-controler">
+          <input type="color" id="circle" value="#2b2b2b">
+          <span>
+            <label for="checkbox">Enable Borders</label>
+            <input type="checkbox" class="checkbox" checked />
+          </span>
+          <span>
+            <h3 id="grid-size">16 x 16 Grid</h3>
+            <input
+              type="range"
+              min="16"
+              max="64"
+              value="16"
+              class="grid-range"
+            />
+          </span>
+          <button class="btn" id="color-btn">Color Mode</button>
+          <button class="btn" id="random-btn">Random Mode</button>
+          <button class="btn" id="eraser-btn">Eraser</button>
+          <button class="btn" id="clear-btn">Clear Sketch</button>
+        </div>
+      </div>
+      <div id="right-container">
+        <div id="grid"></div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <a href="https://github.com/Liad-hossain" target="_blank">
+      Created by Md Liad Hossain <i class="fa fa-github"></i
+    ></a>
+  </footer>
+  <script src="./script.js"></script>
+</html>
